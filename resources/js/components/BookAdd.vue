@@ -1,4 +1,5 @@
 <template>
+    <h3>楽天APIから書籍検索</h3>
     <div class="form-group">
         <label for="title">タイトル</label>
         <input type="text" class="form-control" id="title" v-model="title">

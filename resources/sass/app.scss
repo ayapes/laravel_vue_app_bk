@@ -12,10 +12,12 @@
 #nav_menu {
   width: 100%;
   position: fixed;
-  background-color: rgb(22, 14, 68);
+  background-color:#FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  border-bottom:2px dashed #666;
 }
 
 h1 {
@@ -37,17 +39,17 @@ h1 {
 }
 
 .nav_li {
-  color: #FFF;
+  color: #666;
   padding: 0.5rem;
 }
 
 .nav_link {
-  color: #FFF;
+  color: #666;
   text-decoration: none;
 }
 
 .nav_link:hover {
-  color: #999;
+  color: #ccc;
 }
 
 #wrapper {
@@ -57,7 +59,9 @@ h1 {
   margin: 0 auto;
 }
 
-// BookList.vue
+h3{
+  padding-top: 50px;
+}
 
 .booklist {
 

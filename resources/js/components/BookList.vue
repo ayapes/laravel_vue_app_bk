@@ -19,7 +19,7 @@
       <p class="booklist_publisher">出版社：{{ Book.publisher }}</p>
       <p class="booklist_isbn">ISBN：{{ Book.isbn }}</p>
       <p class="booklist_gunre">ジャンル：{{ Book.gunre }}</p>
-      <p class="booklist_summary">{{ Book.summary }}</p>
+      <p class="booklist_summary">{{ Book.myReview }}</p>
     </div>
 
   <!-- Modal -->

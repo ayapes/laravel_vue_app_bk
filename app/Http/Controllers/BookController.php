@@ -47,9 +47,9 @@ class BookController extends Controller
         // '%'.$request->keyword.'%' 検索前後に余計な文字ついててもOK
         $items = Book::where('title', 'like', '%' . $request->keyword . '%')
             ->orWhere('author', 'like', '%' . $request->keyword . '%')
-            ->orWhere('publisher', 'like', '%' . $request->keyword . '%')
-            ->orWhere('ISBN', 'like', '%' . $request->keyword . '%')
-            ->orWhere('summary', 'like', '%' . $request->keyword . '%')
+            ->orWhere('publisherName', 'like', '%' . $request->keyword . '%')
+            ->orWhere('isbn', 'like', '%' . $request->keyword . '%')
+            ->orWhere('myReview', 'like', '%' . $request->keyword . '%')
             ->get();
 
         return $items;
