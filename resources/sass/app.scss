@@ -1,0 +1,103 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import 'bootstrap/scss/bootstrap';
+
+// App.vue
+
+#nav_menu {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(22, 14, 68);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 120% !important;
+  line-height: 100%;
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0 !important;
+  padding-left: 1rem;
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  /* margin: 0; */
+  margin-bottom: 0;
+}
+
+.nav_li {
+  color: #FFF;
+  padding: 0.5rem;
+}
+
+.nav_link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  color: #999;
+}
+
+#wrapper {
+  padding-top: 4rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+// BookList.vue
+
+.booklist {
+
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.booklist_title {
+  width: 100%;
+  padding-left: 1.5rem;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.booklist_img {
+  width: 30%;
+  padding: 0 0.5rem;
+}
+
+.booklist_img img {
+  width: 100%;
+}
+
+
+.booklist_img:hover{
+  cursor : pointer;
+}
+
+.booklist_others {
+  width: 70%;
+  padding-left: 1rem;
+}
+
+.booklist_summary {
+  border-top: 1px dashed #333;
+  padding-top: 1rem;
+}
