@@ -20,7 +20,7 @@
             <p class="booklist_isbn">ISBN：{{ book.Item.isbn }}</p>
             <p class="booklist_summary">{{ book.Item.itemCaption }}</p>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" :data-bs-target="`#isbn${book.Item.isbn}`">
-                Launch demo modal
+                この本を登録する
             </button>
         </div>
         <!-- Modal -->
@@ -47,14 +47,16 @@
                                 <p class="booklist_summary">{{ book.Item.itemCaption }}</p>
                             </div>
                             <label for="title">ジャンル</label>
-        <input type="text" class="form-control" id="title" v-model="gunre">
-        <label for="title">感想</label>
-        <textarea class="form-control" id="myReview" style="height: 150px" v-model="myReview"></textarea>
+                            <input type="text" class="form-control" id="title" v-model="gunre">
+                            <label for="title">感想</label>
+                            <textarea class="form-control" id="myReview" style="height: 150px"
+                                v-model="myReview"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" v-on:click="addBook(book)" data-bs-dismiss="modal">Save changes</button>
+                        <button type="button" class="btn btn-primary" v-on:click="addBook(book)"
+                            data-bs-dismiss="modal">登録する</button>
                     </div>
                 </div>
             </div>
@@ -102,7 +104,7 @@ export default {
                 publisherName: book.Item.publisherName,
                 isbn: book.Item.isbn,
                 itemCaption: book.Item.itemCaption,
-                gunre: this.gunre,  
+                gunre: this.gunre,
                 myReview: this.myReview,
                 largeImageUrl: book.Item.largeImageUrl,
                 available: true,
