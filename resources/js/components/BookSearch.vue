@@ -1,12 +1,12 @@
 <template>  
-  <h3>書籍検索</h3>
+  <h3>書籍検索☆</h3>
   <div>
     <label for="search" class="form-label">登録済の本を検索できます</label>
     <input type="text" name="search" id="" v-model="keyword" class="form-control">
     <button class="btn btn-primary" v-on:click="search">Search</button>
   </div>
   <div class="booklist" v-for="Book in Books" :key="Book.book_id">
-    <p class="booklist_title"><router-link v-bind:to="{ name: 'book', params: { id: Book.id }}">{{ Book.title }}</router-link></p>
+    <p class="booklist_title">{{ Book.title }}</p>
     <p class="booklist_img">
       <!-- 画像データがなければダミー画像表示するv-if -->
       <span v-if="Book.largeImageUrl"><img :src="Book.largeImageUrl" alt=""></span>
