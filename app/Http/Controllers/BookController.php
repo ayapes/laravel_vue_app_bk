@@ -56,7 +56,6 @@ class BookController extends Controller
     }
     public function show($id)
     {
-
         // $id ←なんでもいい変数
 
         $book = Book::find($id);

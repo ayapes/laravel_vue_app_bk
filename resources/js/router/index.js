@@ -40,8 +40,8 @@ export const router = createRouter({
             component: UserList,
         },
         {
-            path: '/book/:id',
-            name: 'book',
+            path: '/bookk/:id',
+            name: 'bookk',
             component: BookDetail,
         },
         {
