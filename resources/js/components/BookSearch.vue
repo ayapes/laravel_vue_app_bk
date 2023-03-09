@@ -1,5 +1,5 @@
 <template>  
-  <h3>書籍検索☆</h3>
+  <h3>書籍検索☆☆☆☆</h3>
   <div>
     <label for="search" class="form-label">登録済の本を検索できます</label>
     <input type="text" name="search" id="" v-model="keyword" class="form-control">
